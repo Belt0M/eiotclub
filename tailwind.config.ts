@@ -12,6 +12,8 @@ const config: Config = {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+				banner1: 'url(../public/img/banner1.png)',
+				banner2: 'url(../public/img/banner2.png)',
 			},
 			colors: {
 				primary: '#07c160',

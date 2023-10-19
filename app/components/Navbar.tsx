@@ -37,7 +37,7 @@ const Navbar: FC = () => {
 			</section>
 			<section
 				ref={ref}
-				className='relative flex justify-between items-center bg-white mx-40 py-4'
+				className='relative flex justify-between items-center bg-white mx-40 py-3'
 			>
 				<Link href='/'>
 					<Image
