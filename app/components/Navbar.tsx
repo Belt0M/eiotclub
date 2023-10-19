@@ -8,19 +8,26 @@ import { TfiUser } from 'react-icons/tfi'
 import { navbarData } from '../data/navbar.data'
 import Submenu from './Submenu'
 
+import { useRouter } from 'next/navigation'
 import { useOutsideClick } from '../hooks/useOutsideClick'
+import ContextMenu from './ContextMenu'
 
 const Navbar: FC = () => {
 	const [currentNav, setCurrentNav] = useState<string>('')
+	const router = useRouter()
 
 	const ref = useOutsideClick(() => {
 		setCurrentNav('')
 	})
 
 	const handleClick = (name: string) => {
-		if (currentNav === name) {
+		if (name === navbarData[2].name) {
+			router.push('/')
+		} else if (currentNav === name) {
 			setCurrentNav('')
-		} else [setCurrentNav(name)]
+		} else {
+			setCurrentNav(name)
+		}
 	}
 
 	return (
@@ -64,6 +71,9 @@ const Navbar: FC = () => {
 				</div>
 				{currentNav === navbarData[0].name && <Submenu data={navbarData[0]} />}
 				{currentNav === navbarData[1].name && <Submenu data={navbarData[1]} />}
+				{currentNav === navbarData[3].name && (
+					<ContextMenu data={navbarData[3]} />
+				)}
 			</section>
 		</header>
 	)

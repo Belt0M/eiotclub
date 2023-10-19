@@ -6,7 +6,7 @@ export const navbarData: INavbar[] = [
 		subItems: [
 			{
 				subName: 'USA Double Network',
-				img: '	https://www.eiotclub.com/cdn/shop/files/02-500x500-0630.png?v=1688104004&width=900',
+				img: 'https://www.eiotclub.com/cdn/shop/files/02-500x500-0630.png?v=1688104004&width=900',
 			},
 			{
 				subName: 'USA Triple-Play Network',
@@ -24,11 +24,11 @@ export const navbarData: INavbar[] = [
 		subItems: [
 			{
 				subName: 'Security Camera SIM Card',
-				img: 'https://www.eiotclub.com/cdn/shop/files/03-500x500…4092-a0d4-d9f170166f9e.png?v=1688103060&width=900',
+				img: 'https://www.eiotclub.com/cdn/shop/files/01-500x500-0630.png?v=1688104004&width=900',
 			},
 			{
 				subName: 'Trail Camera Sim Card',
-				img: 'https://www.eiotclub.com/cdn/shop/files/04-500x500…44cc-9d0f-9ddd19647f25.png?v=1688103061&width=900',
+				img: 'https://www.eiotclub.com/cdn/shop/files/02-500x500-0630.png?v=1688104004&width=900',
 			},
 			{
 				subName: '4G Router Sim Card',
