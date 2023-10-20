@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import FreeShipping from './components/FreeShipping'
 import Navbar from './components/Navbar'
+import NavbarMobile from './components/NavbarMobile'
 import './globals.css'
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -17,7 +19,9 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body>
+				<FreeShipping />
 				<Navbar />
+				<NavbarMobile />
 				{children}
 			</body>
 		</html>

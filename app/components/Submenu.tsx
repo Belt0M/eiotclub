@@ -9,7 +9,7 @@ interface Props {
 
 const Submenu: FC<Props> = ({ data }) => {
 	return (
-		<div className='flex px-44 pt-10 fixed left-0 top-24 w-full bg-white h-96 shadow-md justify-between'>
+		<div className='flex px-44 pt-10 fixed left-0 top-20 w-full bg-white h-96 shadow-md justify-between'>
 			<ul className='list-none flex flex-col'>
 				{data.subItems?.map(item => (
 					<Link href='/' key={item.subName}>
