@@ -17,8 +17,8 @@ const VideosSection: FC = () => {
 		setCurrentModal(name)
 	}
 	return (
-		<section className='h-[100vh] px-44 flex flex-col gap-4 justify-center items-center pb-20'>
-			<h1 className='text-3xl'>Recommended By</h1>
+		<section className='md:h-[100vh] h-[70vh] md:px-44 px-4 flex flex-col gap-4 justify-center items-center pb-20'>
+			<h1 className='md:text-3xl text-2xl'>Recommended By</h1>
 			<div className='flex justify-between gap-2 h-4/5 w-full mt-3'>
 				{videoData.map((el, index) => {
 					const isActive = active === el.img

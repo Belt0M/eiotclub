@@ -6,12 +6,14 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import Button from '../atoms/Button'
 import { sliderData } from '../data/slider.data'
 
-const Slider: FC = () => {
+const DevicesSlider: FC = () => {
 	return (
 		<section className='h-[85vh]'>
-			<h1 className=' pl-44 text-3xl'>Shop by Device</h1>
+			<h1 className=' md:pl-44 px-4 md:text-3xl text-2xl md:pt-0 pt-12'>
+				Shop by Device
+			</h1>
 			<Swiper
-				slidesPerView={4.3}
+				slidesPerView={1.2}
 				freeMode={true}
 				pagination={{
 					clickable: true,
@@ -39,4 +41,4 @@ const Slider: FC = () => {
 	)
 }
 
-export default Slider
+export default DevicesSlider

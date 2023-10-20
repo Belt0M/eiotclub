@@ -1,16 +1,27 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { FreeMode, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { guidesData } from '../data/guides.data'
 
 const GuidesSlider: FC = () => {
+	const [isMobile, setIsMobile] = useState<boolean>(false)
+
+	useEffect(() => {
+		if (window.innerWidth < 760) {
+			setIsMobile(true)
+		} else {
+			setIsMobile(false)
+		}
+		console.log(isMobile)
+	}, [])
+
 	return (
 		<section className='h-[58vh] pb-8'>
-			<div className='pl-44 flex gap-6 items-center'>
-				<h1 className='text-3xl'>Buying Guides</h1>
+			<div className='md:pl-44 px-4 flex gap-6 items-center'>
+				<h1 className='md:text-3xl text-2xl'>Buying Guides</h1>
 				<Link
 					href='/'
 					className=' pt-1 text-primary hover:brightness-105 transition'
@@ -19,7 +30,7 @@ const GuidesSlider: FC = () => {
 				</Link>
 			</div>
 			<Swiper
-				slidesPerView={3.5}
+				slidesPerView={isMobile ? 1.4 : 3.5}
 				freeMode={true}
 				pagination={{
 					clickable: true,

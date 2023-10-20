@@ -5,12 +5,14 @@ import { networkData } from '../data/network.data'
 
 const NetworkSection: FC = () => {
 	return (
-		<section className='px-40 h-[95svh] text-center'>
-			<h1 className='text-[2rem] mt-14 font-bold'>Shop by Network</h1>
+		<section className='md:px-40 px-4 md:h-[95vh] h-auto md:py-0 py-8 text-center'>
+			<h1 className='md:text-[2rem] text-2xl mt-14 font-bold'>
+				Shop by Network
+			</h1>
 			<p className='mt-3 text-lg'>
 				Finding the perfect prepaid SIM card for your network
 			</p>
-			<div className='flex justify-between mt-8'>
+			<div className='flex md:flex-row flex-col md:gap-0 gap-6 justify-between mt-8'>
 				{networkData.map(item => (
 					<div
 						key={item.name}

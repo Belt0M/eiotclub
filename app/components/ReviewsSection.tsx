@@ -11,7 +11,7 @@ const ReviewsSection = () => {
 	}
 
 	return (
-		<section className='px-44 flex flex-col gap-4 justify-center items-center h-[55vh] bg-lightGray'>
+		<section className='md:px-44 px-4 md:flex hidden flex-col gap-4 justify-center items-center h-[55vh] bg-lightGray'>
 			<h1 className='text-3xl font-bold'>Recommended By</h1>
 			<div className='flex gap-4 mt-3'>
 				{reviewsData.map((item, index) => {

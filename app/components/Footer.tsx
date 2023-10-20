@@ -10,9 +10,9 @@ import { networksIcons } from '../data/soc-net-icons.data'
 
 const Footer: FC = () => {
 	return (
-		<footer className='px-44 h-[80vh] bg-black pt-20 p-5 text-white'>
+		<footer className='md:px-44 px-4 md:h-[80vh] h-auto bg-black pt-20 p-5 text-white'>
 			<div className='flex gap-8 justify-between'>
-				<div className='flex justify-between gap-14'>
+				<div className='flex justify-between md:flex-row flex-col gap-14'>
 					<div className='flex-[3]'>
 						<h1 className='text-2xl mb-5'>SIGN UP AND SAVE</h1>
 						<p>
