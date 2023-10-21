@@ -16,10 +16,8 @@ const Button: FC<Props> = ({
 	py = 'py-3 ',
 	width = 'w-44 ',
 	fontSize = 'text-base ',
-	left = 4,
 	mt = 'mt-6 ',
 }) => {
-	const leftV = `left-${left}`
 	const minWidth = 'min-w-[' + width + '] '
 	return (
 		<Link
@@ -36,10 +34,7 @@ const Button: FC<Props> = ({
 			<span className='group-hover:-translate-x-4 transition-all duration-300 flex items-center gap-2'>
 				{name}
 				<MdArrowRightAlt
-					className={
-						leftV +
-						` absolute scale-[2] scale-x-[2.5] opacity-0 group-hover:opacity-100 transition-all duration-300 delay-75 translate-x-20`
-					}
+					className={`right-12 absolute scale-[2] scale-x-[2.5] opacity-0 group-hover:opacity-100 transition-all duration-300 delay-75 translate-x-20`}
 				/>
 			</span>
 		</Link>

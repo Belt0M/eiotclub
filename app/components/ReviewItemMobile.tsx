@@ -43,7 +43,6 @@ const ReviewItemMobile: FC<Props> = ({ data, active, onHover }) => {
 						fontSize='text-[.85rem] '
 						width='w-60 '
 						mt='mt-0 '
-						left={2}
 					/>
 				</div>
 			</div>

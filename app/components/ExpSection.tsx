@@ -11,7 +11,7 @@ const ExpSection: FC = () => {
 				<p className='text-lg'>
 					Lightning-fast signal strength for a smarter, more efficient life
 				</p>
-				<Button name='Learn more' left={6} />
+				<Button name='Learn more' />
 			</div>
 		</section>
 	)

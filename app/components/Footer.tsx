@@ -29,7 +29,6 @@ const Footer: FC = () => {
 								name='Subscribe'
 								mt='0 '
 								width='w-32 '
-								left={8}
 								fontSize='text-sm '
 								py='py-[.9rem] '
 							/>
