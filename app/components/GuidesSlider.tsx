@@ -15,7 +15,6 @@ const GuidesSlider: FC = () => {
 		} else {
 			setIsMobile(false)
 		}
-		console.log(isMobile)
 	}, [])
 
 	return (

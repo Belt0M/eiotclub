@@ -1,19 +1,29 @@
 'use client'
 import Image from 'next/image'
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { FreeMode, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Button from '../atoms/Button'
 import { sliderData } from '../data/slider.data'
 
 const DevicesSlider: FC = () => {
+	const [isMobile, setIsMobile] = useState<boolean>(false)
+
+	useEffect(() => {
+		if (window.innerWidth < 760) {
+			setIsMobile(true)
+		} else {
+			setIsMobile(false)
+		}
+	}, [])
+
 	return (
 		<section className='h-[85vh]'>
 			<h1 className=' md:pl-44 px-4 md:text-3xl text-2xl md:pt-0 pt-12'>
 				Shop by Device
 			</h1>
 			<Swiper
-				slidesPerView={1.2}
+				slidesPerView={isMobile ? 1.2 : 4.3}
 				freeMode={true}
 				pagination={{
 					clickable: true,
