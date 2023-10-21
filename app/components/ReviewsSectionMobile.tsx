@@ -13,7 +13,7 @@ const ReviewsSectionMobile = () => {
 	}
 
 	return (
-		<section className='md:px-44 md:hidden px-4 flex flex-col gap-4 justify-center items-center h-50vh bg-lightGray'>
+		<section className='md:px-44 md:hidden px-4 md:pb-0 pb-6 flex flex-col gap-4 justify-center items-center h-50vh bg-lightGray'>
 			<h1 className='mt-12 text-2xl font-bold'>Recommended By</h1>
 			<Swiper
 				slidesPerView={1.2}
