@@ -13,7 +13,7 @@ const ReviewsSection = () => {
 	return (
 		<section className='md:px-44 px-4 md:pb-0 pb-6 md:flex hidden flex-col gap-4 justify-center items-center h-[55vh] bg-lightGray'>
 			<h1 className='text-3xl font-bold'>Recommended By</h1>
-			<div className='flex gap-4 mt-3'>
+			<div className='flex gap-4 mt-3 max-h-[50vh]'>
 				{reviewsData.map((item, index) => {
 					if (!index) {
 						return (

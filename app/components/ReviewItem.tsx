@@ -44,7 +44,7 @@ const ReviewItem: FC<Props> = ({ data, active, onHover }) => {
 						width={60}
 						height={150}
 					/>
-					<span>{data.productName}</span>
+					<span className='max-h-4'>{data.productName}</span>
 					<Button
 						name='Shop Now'
 						py='py-2.5 '
