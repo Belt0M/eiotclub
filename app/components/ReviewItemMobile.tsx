@@ -36,7 +36,9 @@ const ReviewItemMobile: FC<Props> = ({ data, active, onHover }) => {
 					<div className='relative w-1/3 h-20'>
 						<Image src={data.productImg} alt={data.name} fill />
 					</div>
-					<span>{data.productName}</span>
+					<span className='max-h-4 md:max-h-full overflow-hidden'>
+						{data.productName}
+					</span>
 					<Button
 						name='Shop Now'
 						py='py-2.5 '
