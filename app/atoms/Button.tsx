@@ -28,7 +28,7 @@ const Button: FC<Props> = ({
 				fontSize +
 				mt +
 				minWidth +
-				'relative flex justify-center bg-primary text-white font-semibold rounded-3xl group items-center'
+				'relative flex justify-center bg-primary text-white font-semibold rounded-3xl group items-center overflow-hidden'
 			}
 		>
 			<span className='group-hover:-translate-x-4 transition-all duration-300 flex items-center gap-2'>
