@@ -36,7 +36,7 @@ const ReviewItemMobile: FC<Props> = ({ data, active, onHover }) => {
 					<div className='relative w-1/3 h-20'>
 						<Image src={data.productImg} alt={data.name} fill />
 					</div>
-					<span className='max-h-4 md:max-h-full overflow-hidden'>
+					<span className='max-h-7 md:max-h-full overflow-hidden'>
 						{data.productName}
 					</span>
 					<Button
